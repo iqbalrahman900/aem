@@ -9,3 +9,13 @@ btn {
     padding: 7px 20px;
     font-size: 14px;
 }
+
+.mobile{
+    width: 35%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .mobile{
+        width: 60%;
+    }
+}
