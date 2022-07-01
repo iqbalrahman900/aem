@@ -38,8 +38,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
         tokenGetter:() => {
           return localStorage.getItem('access_token');
         },
-        allowedDomains: ['http://iqbalrahman.myprism.biz'],
-        disallowedRoutes:['http://iqbalrahman.myprism.biz/auth/login']
+        //allowedDomains: ['localhost:8080'],
+         allowedDomains: ['http://iqbalrahman.myprism.biz'],
+
+        //disallowedRoutes:['localhost/auth/login']
+         disallowedRoutes:['http://iqbalrahman.myprism.biz/auth/login']
       }
     })
    
