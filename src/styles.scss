@@ -1,1 +1,52 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~ngx-toastr/toastr";
+
+$body-bg: #f4faff;
+
+.card {
+    box-shadow: 0px 1px 52px 0px rgba(0, 0, 0, 0.1);
+    background-color: $body-bg;
+    border: none;
+    border-radius: 1.5rem;
+    //overflow: hidden;
+    margin-bottom: 40px;
+    .form-check {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .card-title {
+        font-weight: bold;
+        font-size: 1rem;
+        margin-bottom: 0px;
+    }
+    .card-text {
+        font-size: 0.75rem;
+    }
+}
+
+textarea:focus,
+textarea.form-control:focus,
+input.form-control:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+[type="text"].form-control:focus,
+[type="password"].form-control:focus,
+[type="email"].form-control:focus,
+[type="tel"].form-control:focus,
+[contenteditable].form-control:focus {
+    box-shadow: inset 0 -1px 0 #ddd;
+    outline: none;
+}
+
+.card-title {
+    background-color: #dcdcdc;
+    font-size: 15px;
+    padding: 12px 10px;
+}
+
+.axis, .axis--x, .axis--y{
+    display: none !important;
+}
